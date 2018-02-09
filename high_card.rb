@@ -25,8 +25,7 @@ name = []
 puts "Welcome to High card!"
 loop do
     puts "#{name.length} players so far. Enter a player name, or type 'play':"
-    # name = gets.chomp
-    name << gets.chomp
+      name << gets.chomp && name = gets.chomp 
     break if name == "play"
 end
 puts "Thank you " + name[i] + " your card is " + deck[i]
