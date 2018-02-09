@@ -2,4 +2,25 @@
 ranks = ["A", 2, 3, 4, 5, 6, 7, 8, 9, 10, "J", "Q", "K" ]
 suits = [ "hearts", "spades", "clubs", "diamonds" ]
 
+
+deck = []
+
+suits.each do |suit|
+    ranks.each do |rank|
+        deck << [rank, suit]  
+    end
+end
+deck = deck.shuffle
+
+puts deck
+
+# puts " Welcome to highcard! What is first players name?"
+# fplayer = gets.chomp
+# puts "Hello " + fplayer + ". What is second players name?"
+# splayer = gets.chomp
+# puts "Hello " + splayer + ". lets play!"
+# puts fplayer + " your card is " + deck[0] + "!" + splayer + " your card is " + deck[1] + "!"
 players = []
+puts "{n} players so far. Enter a player name, or type 'play':"
+
+
