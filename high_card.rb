@@ -20,10 +20,13 @@ puts deck
 # splayer = gets.chomp
 # puts "Hello " + splayer + ". lets play!"
 # puts fplayer + " your card is " + deck[0] + "!" + splayer + " your card is " + deck[1] + "!"
-
-players = []
-puts "#{players.length} players so far. Enter a player name, or type 'play':"
-name = gets.chomp
-until input == "play" do
-    puts 
-
+i = 0
+name = []
+puts "Welcome to High card!"
+loop do
+    puts "#{name.length} players so far. Enter a player name, or type 'play':"
+    # name = gets.chomp
+    name << gets.chomp
+    break if name == "play"
+end
+puts "Thank you " + name[i] + " your card is " + deck[i]
